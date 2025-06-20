@@ -1,0 +1,21 @@
+/* src/components/AboutMe/AboutMe.module.css */
+.about {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #919191;
+}
+
+.text {
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #c0c0c0;
+  margin-bottom: 1rem;
+}

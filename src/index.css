@@ -1,8 +1,67 @@
+/* RESET BÁSICO */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
   list-style: none;
   text-decoration: none;
+  border: 1px dotted red; 
 }
+
+/* TIPOGRAFÍA BASE */
+body {
+  font-family: 'Inter', sans-serif; /* <-- Puedes cambiarlo más adelante */
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* VARIABLES CSS */
+:root {
+  /* COLORES PRINCIPALES */
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --background-color: #000000;
+  --text-color: #212529;
+
+  /* ESPACIADO */
+  --padding-sm: 0.5rem;
+  --padding-md: 1rem;
+  --padding-lg: 2rem;
+
+  /* TIPOGRAFÍAS */
+  /* --font-heading: 'Your Heading Font', sans-serif; */
+  /* --font-body: 'Your Body Font', sans-serif; */
+
+  /* BREAKPOINTS (comentados, útiles para referencia en media queries) */
+  /* --breakpoint-sm: 576px; */
+  /* --breakpoint-md: 768px; */
+  /* --breakpoint-lg: 992px; */
+  /* --breakpoint-xl: 1200px; */
+}
+
+/* ENLACES */
+a {
+  color: inherit;
+}
+
+/* CABECERAS */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* UTILIDADES (opcional: puedes borrarlas si usas frameworks como Tailwind o Bootstrap) */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--padding-md);
+}
+
+/* EJEMPLOS DE MEDIA QUERIES (puedes copiarlos como plantilla) */
+
+/* @media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+} */

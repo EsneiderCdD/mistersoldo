@@ -1,0 +1,74 @@
+.videoHome {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.videoBg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  text-align: center;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.videoTitle {
+  font-size: 8vw; /* Escalable según el ancho de pantalla */
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.videoBtn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 999px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.videoBtn:hover {
+  background-color: #eaeaea;
+}
+
+
+/* Media Queries para mejorar responsividad */
+
+@media (min-width: 768px) {
+  .videoTitle {
+    font-size: 4rem;
+  }
+
+  .videoBtn {
+    font-size: 1.2rem;
+    padding: 0.75rem 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .videoBtn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
