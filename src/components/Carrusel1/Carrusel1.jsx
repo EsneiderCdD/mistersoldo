@@ -1,6 +1,9 @@
+// Carrusel1.jsx
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, FreeMode } from "swiper/modules"; // Importar módulos necesarios
 import "swiper/css";
+import "swiper/css/free-mode";
 
 import styles from "./Carrusel.module.css";
 
@@ -18,14 +21,24 @@ import j from "../../assets/images/j.jpeg";
 import k from "../../assets/images/k.jpeg";
 import Mr3 from "../../assets/images/Mr3.jpeg";
 
-const images = [Mr3,k, , c, d, e ,h, b, f, g,a, i, j, ];
+const images = [Mr3, k, c, d, e, h, b, f, g, a, i, j];
 
 const Carrusel1 = () => {
   return (
     <div className={styles.container}>
       <Swiper
+        modules={[Autoplay, FreeMode]}
         spaceBetween={20}
         slidesPerView={3}
+        loop={true}
+        speed={10000} // Velocidad de desplazamiento (ajustar para hacerlo más lento)
+        autoplay={{
+          delay: 0, // Para que no haga pausa entre transiciones
+          disableOnInteraction: false,
+        }}
+        freeMode={true} // Activar movimiento libre
+        freeModeMomentum={false} // Desactivar la fricción, para que no se frene
+        freeModeSticky={false} // Desactivar que se pegue a slides
         breakpoints={{
           320: { slidesPerView: 1 },
           640: { slidesPerView: 2 },
@@ -44,5 +57,3 @@ const Carrusel1 = () => {
 };
 
 export default Carrusel1;
-
-
