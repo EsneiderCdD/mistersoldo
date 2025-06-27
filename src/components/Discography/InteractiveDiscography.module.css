@@ -34,7 +34,8 @@
 
 .albumImage {
   width: 100%;
-  border-radius: 0.5rem;
+  aspect-ratio: 1 / 1; /* Esto obliga a que el ancho y el alto sean siempre iguales */
+  border-radius: 50%;  /* Ahora sí quedará perfectamente circular */
   margin-bottom: 1rem;
   object-fit: cover;
 }

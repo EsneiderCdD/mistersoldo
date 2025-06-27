@@ -5,6 +5,7 @@ import AlbumCard from './AlbumCard';
 import SongList from './SongList';
 import SongModal from './SongModal';
 import Album from  '../../assets/images/Album.jpg'; // Asegúrate de que la ruta sea correcta, por ejemplo:
+import IP from '../../assets/images/IP.jpeg'; // Asegúrate de que la ruta sea correcta, por ejemplo:  // src\assets\images\Album.jpg
 
 const InteractiveDiscography = () => {
   const [activeCategory, setActiveCategory] = useState(null);
@@ -93,8 +94,8 @@ const InteractiveDiscography = () => {
           whileDrag={{ scale: 1.05, zIndex: 10 }}
         >
           <AlbumCard
-            image="https://i.pinimg.com/736x/c9/08/9b/c9089b98146e38cccb243d3d4a2d6963.jpg"
-            title="Canciones Sueltas"
+            image={IP}
+            title="Canciones "
             description="Temas individuales que marcan estilo propio."
           />
         </motion.div>
