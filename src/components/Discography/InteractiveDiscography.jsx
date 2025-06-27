@@ -4,9 +4,9 @@ import { motion, useAnimation } from 'framer-motion';
 import AlbumCard from './AlbumCard';
 import SongList from './SongList';
 import SongModal from './SongModal';
-import { albumSongs, soloSongs } from '../../data/albumSongs'; // ✅ Importamos las listas desde data
 import Album from '../../assets/images/Album.jpg';
 import IP from '../../assets/images/IP.jpeg';
+import { albumSongs, soloSongs } from '../../data/albumSongs';
 
 const InteractiveDiscography = () => {
   const [activeCategory, setActiveCategory] = useState(null);
@@ -16,6 +16,9 @@ const InteractiveDiscography = () => {
   const dropZoneRef = useRef(null);
   const albumControls = useAnimation();
   const soloControls = useAnimation();
+
+  const [isAlbumSpinning, setIsAlbumSpinning] = useState(false);
+  const [isSoloSpinning, setIsSoloSpinning] = useState(false);
 
   const handleDragEnd = async (event, category) => {
     const dropRect = dropZoneRef.current?.getBoundingClientRect();
@@ -36,15 +39,17 @@ const InteractiveDiscography = () => {
       await soloControls.start({ x: 0, y: 0, transition: { type: 'spring', stiffness: 500, damping: 30 } });
     }
 
-    // Si se soltó dentro del dropzone, actualiza la vista
     if (isInside) {
       setActiveCategory(category);
 
-      // Guardar la imagen correspondiente
       if (category === 'album') {
         setActiveImage(Album);
+        setIsAlbumSpinning(true);
+        setIsSoloSpinning(false);
       } else if (category === 'solista') {
         setActiveImage(IP);
+        setIsSoloSpinning(true);
+        setIsAlbumSpinning(false);
       }
     }
   };
@@ -78,7 +83,17 @@ const InteractiveDiscography = () => {
       <div ref={dropZoneRef} className={styles.dropZone}>
         <div className={styles.dropContent}>
           {activeImage ? (
-            <img src={activeImage} alt="Álbum seleccionado" className={styles.droppedImage} />
+            <motion.img
+              src={activeImage}
+              alt="Álbum seleccionado"
+              className={styles.droppedImage}
+              animate={(activeCategory === 'album' && isAlbumSpinning) || (activeCategory === 'solista' && isSoloSpinning)
+                ? { rotate: 360 }
+                : { rotate: 0 }}
+              transition={(activeCategory === 'album' && isAlbumSpinning) || (activeCategory === 'solista' && isSoloSpinning)
+                ? { repeat: Infinity, ease: 'linear', duration: 3 }
+                : {}}
+            />
           ) : (
             <>
               <span className={styles.dropIcon}>🎧</span>
