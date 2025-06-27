@@ -14,7 +14,7 @@ const releases = [
 const LatestReleases = () => {
   return (
     <section className={styles.latestSection}>
-      <h2 className={styles.title}>🆕 Últimos Lanzamientos</h2>
+      <h2 className={styles.title}> Últimos Lanzamientos</h2>
       <div className={styles.releaseList}>
         {releases.map((release, idx) => (
           <div key={idx} className={styles.releaseCard}>
@@ -27,10 +27,7 @@ const LatestReleases = () => {
                 allowFullScreen
               />
             </div>
-            <div className={styles.releaseInfo}>
-              <h3>{release.title}</h3>
-              <p>{release.description}</p>
-            </div>
+            
           </div>
         ))}
       </div>

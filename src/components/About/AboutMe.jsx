@@ -1,7 +1,9 @@
-// src/components/AboutMe/AboutMe.jsx
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import styles from './AboutMe.module.css'
+import sobreMr from '../../assets/videos/sobreMr.mp4'
+import posterImg from '../../assets/images/MrsoldoP.png'
+import { X } from 'lucide-react' // Si quieres, te puedo cambiar esto por texto
 
 const textVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -13,6 +15,11 @@ const textVariants = {
 }
 
 const AboutMe = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const openModal = () => setIsModalOpen(true)
+  const closeModal = () => setIsModalOpen(false)
+
   return (
     <section className={styles.about} id="about-me">
       <motion.h2
@@ -62,7 +69,23 @@ const AboutMe = () => {
         en redes sociales y plataformas digitales.
       </motion.p>
 
-      <h1>*AQUI VA EL VIDEO SOBRE MI*</h1>
+      {/* Botón con imagen como poster */}
+      <div className={styles.videoThumbnail} onClick={openModal}>
+        <img src={posterImg} alt="Poster Mister Soldo" className={styles.posterImage} />
+        <span className={styles.playText}>Ver Video Sobre Mi 🎥</span>
+      </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className={styles.modalOverlay} onClick={closeModal}>
+          <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
+            <button className={styles.closeButton} onClick={closeModal}>
+              <X size={30} />
+            </button>
+            <video src={sobreMr} controls autoPlay className={styles.video} />
+          </div>
+        </div>
+      )}
     </section>
   )
 }
