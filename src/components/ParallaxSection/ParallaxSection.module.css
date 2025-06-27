@@ -1,0 +1,52 @@
+.parallaxSection {
+  background-image: url('../../assets/images/IP.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:nth-child(1) { background-color: #25d366; } /* WhatsApp */
+.button:nth-child(2) { background-color: #e1306c; } /* Instagram */
+.button:nth-child(3) { background-color: #ff0000; } /* YouTube */
+.button:nth-child(4) { background-color: #1db954; } /* Spotify */
+
+.button:hover {
+  opacity: 0.8;
+}
