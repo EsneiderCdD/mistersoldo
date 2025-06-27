@@ -10,7 +10,7 @@ const AlbumCard = ({ image, title  }) => (
       className={styles.albumImage}
       draggable={false}  // evita conflicto nativo del navegador
     />
-    <h3>{title}</h3>
+   
     
   </div>
 );

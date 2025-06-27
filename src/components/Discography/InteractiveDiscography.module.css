@@ -21,15 +21,15 @@
 
 .dragCard {
   cursor: grab;
+  
 }
 
 .albumCard {
-  background: #1b1b1b;
-  border-radius: 1rem;
-  padding: 1rem;
+  background: none;
+  border-radius: 0;
+  padding: 0;
   width: 250px;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
-  text-align: center;
+  
 }
 
 .albumImage {
@@ -141,5 +141,11 @@
 .dropIcon {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
+}
+.droppedImage {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
