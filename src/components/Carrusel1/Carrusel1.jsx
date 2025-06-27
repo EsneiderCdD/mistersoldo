@@ -12,11 +12,13 @@ import d from "../../assets/images/d.jpeg";
 import e from "../../assets/images/e.jpeg";
 import f from "../../assets/images/f.jpeg";
 import g from "../../assets/images/g.jpeg";
+import h from "../../assets/images/h.jpeg";
 import i from "../../assets/images/i.jpeg";
 import j from "../../assets/images/j.jpeg";
 import k from "../../assets/images/k.jpeg";
+import Mr3 from "../../assets/images/Mr3.jpeg";
 
-const images = [k, , c, d, e , b, f, g,a, i, j, ];
+const images = [Mr3,k, , c, d, e ,h, b, f, g,a, i, j, ];
 
 const Carrusel1 = () => {
   return (
