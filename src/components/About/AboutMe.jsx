@@ -4,6 +4,7 @@ import styles from './AboutMe.module.css'
 import sobreMr from '../../assets/videos/sobreMr.mp4'
 import posterImg from '../../assets/images/MrsoldoP.png'
 import { X } from 'lucide-react' // Si quieres, te puedo cambiar esto por texto
+import Logo from '../../assets/images/Logo.jpeg'
 
 const textVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -30,8 +31,10 @@ const AboutMe = () => {
         custom={0}
         variants={textVariants}
       >
-        Sobre Mister Soldo
+        
+        
       </motion.h2>
+      {<img src={Logo} alt="Logo Mister Soldo" className={styles.logo} />}
       <motion.p
         className={styles.text}
         initial="hidden"

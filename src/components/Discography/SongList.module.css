@@ -1,0 +1,54 @@
+.songList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.songRow {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;              /* 👉 Distribuye imagen e info lado a lado */
+  align-items: center;
+  gap: 1rem;                  /* 👉 Espacio entre imagen e info */
+}
+
+.songImage {
+  width: 100px;               /* 👉 Tamaño cuadrado */
+  height: 100px;
+  object-fit: cover;          /* 👉 Para que la imagen no se deforme */
+  border-radius: 4px;
+}
+
+.songInfo {
+  display: flex;
+  flex-direction: column;     /* 👉 Título, artista y botón en columna */
+  gap: 0.5rem;
+  flex: 1;                    /* 👉 Ocupa todo el espacio restante */
+}
+
+.songTitle {
+  color: #fff;
+  font-weight: bold;
+}
+
+.songArtist {
+  color: #aaa;
+}
+
+.songRow button {
+  background: #f05454;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: fit-content;         /* 👉 Botón ajustado al contenido */
+}
+
+.songRow button:hover {
+  background: #ff7676;
+}

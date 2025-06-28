@@ -40,45 +40,6 @@
   object-fit: cover;
 }
 
-.songList {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.songRow {
-  background: #1a1a1a;
-  padding: 1rem;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.songTitle {
-  color: #fff;
-  font-weight: bold;
-}
-
-.songArtist {
-  color: #aaa;
-}
-
-.songRow button {
-  background: #f05454;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.songRow button:hover {
-  background: #ff7676;
-}
 
 .modalOverlay {
   position: fixed;

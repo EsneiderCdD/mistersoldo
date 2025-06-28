@@ -58,27 +58,7 @@ const InteractiveDiscography = () => {
     <section className={styles.section}>
       <h2 className={styles.title}>Explora la Discografía</h2>
 
-      <div className={styles.dragContainer}>
-        <motion.div
-          className={styles.dragCard}
-          drag
-          animate={albumControls}
-          onDragEnd={(e) => handleDragEnd(e, 'album')}
-          whileDrag={{ scale: 1.05, zIndex: 10 }}
-        >
-          <AlbumCard image={Album} />
-        </motion.div>
-
-        <motion.div
-          className={styles.dragCard}
-          drag
-          animate={soloControls}
-          onDragEnd={(e) => handleDragEnd(e, 'solista')}
-          whileDrag={{ scale: 1.05, zIndex: 10 }}
-        >
-          <AlbumCard image={IP} />
-        </motion.div>
-      </div>
+     
 
       <div ref={dropZoneRef} className={styles.dropZone}>
         <div className={styles.dropContent}>
@@ -101,6 +81,28 @@ const InteractiveDiscography = () => {
             </>
           )}
         </div>
+      </div>
+
+       <div className={styles.dragContainer}>
+        <motion.div
+          className={styles.dragCard}
+          drag
+          animate={albumControls}
+          onDragEnd={(e) => handleDragEnd(e, 'album')}
+          whileDrag={{ scale: 1.05, zIndex: 10 }}
+        >
+          <AlbumCard image={Album} />
+        </motion.div>
+
+        <motion.div
+          className={styles.dragCard}
+          drag
+          animate={soloControls}
+          onDragEnd={(e) => handleDragEnd(e, 'solista')}
+          whileDrag={{ scale: 1.05, zIndex: 10 }}
+        >
+          <AlbumCard image={IP} />
+        </motion.div>
       </div>
 
       {activeCategory === 'album' && (
