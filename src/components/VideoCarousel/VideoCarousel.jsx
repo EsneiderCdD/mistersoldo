@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import styles from "./VideoCarousel.module.css";
 import { videos } from "../../data/videos";
 
+
 const VideoCarousel = () => {
   return (
     <div className={styles.container}>

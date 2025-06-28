@@ -7,5 +7,8 @@ export const videos = [
   { id: 1, src: v1, description: "Video 1: Momentos únicos" },
   { id: 2, src: v2, description: "Video 2: Grandes recuerdos" },
   { id: 3, src: v1, description: "Video 3: Imperdible" },
+  { id: 1, src: v1, description: "Video 1: Momentos únicos" },
+  { id: 2, src: v2, description: "Video 2: Grandes recuerdos" },
+  { id: 3, src: v1, description: "Video 3: Imperdible" },
 ];
 
