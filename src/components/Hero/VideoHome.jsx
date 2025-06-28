@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../../components/Hero/VideoHome.module.css'
 import videoBg from '../../assets/videos/MISTERSOLDOHOME.mp4'
+import Logo2 from '../../assets/images/Logo2.png' 
 
 const VideoHome = () => {
   return (
@@ -14,7 +15,7 @@ const VideoHome = () => {
         playsInline
       />
       <div className={styles.videoOverlay}>
-        <h1 className={styles.videoTitle}>MISTER SOLDO</h1>
+        <img src={Logo2} alt="Logo Mister Soldo" className={styles.logo} />
        
       </div>
     </section>

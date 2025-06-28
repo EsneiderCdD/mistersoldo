@@ -14,8 +14,9 @@ function App() {
       <Carrusel1 />
       <AboutMe />
       <LatestReleases />
-      <InteractiveDiscography />
       <VideoCarousel />
+      <InteractiveDiscography />
+      
       <ParallaxSection />
 
       

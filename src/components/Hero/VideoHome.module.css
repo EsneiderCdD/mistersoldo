@@ -52,6 +52,11 @@
   background-color: #eaeaea;
 }
 
+.logo {
+  width: 150px; /* Ajusta el tamaño del logo */
+  margin-bottom: 1rem;
+  animation: fadeIn 2s ease-in-out;
+}
 
 /* Media Queries para mejorar responsividad */
 
