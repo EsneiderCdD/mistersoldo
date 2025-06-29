@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&family=Urbanist:wght@400;600;700&display=swap');
+
+
 /* RESET BÁSICO */
 * {
   margin: 0;
@@ -10,7 +13,7 @@
 
 /* TIPOGRAFÍA BASE */
 body {
-  font-family: 'Inter', sans-serif; /* <-- Puedes cambiarlo más adelante */
+  font-family: 'Poppins', sans-serif; /* <-- Puedes cambiarlo más adelante */
   line-height: 1.6;
   background-color: var(--background-color);
   color: var(--text-color);
@@ -29,15 +32,16 @@ body {
   --padding-md: 1rem;
   --padding-lg: 2rem;
 
-  /* TIPOGRAFÍAS */
-  /* --font-heading: 'Your Heading Font', sans-serif; */
-  /* --font-body: 'Your Body Font', sans-serif; */
+/* Tipografía */
+ --font-title: 'Urbanist', sans-serif;
+--font-body: 'Poppins', sans-serif;
 
+  
   /* BREAKPOINTS (comentados, útiles para referencia en media queries) */
-  /* --breakpoint-sm: 576px; */
-  /* --breakpoint-md: 768px; */
-  /* --breakpoint-lg: 992px; */
-  /* --breakpoint-xl: 1200px; */
+   --breakpoint-sm: 350px; 
+   --breakpoint-md: 450px; 
+   --breakpoint-lg: 700px; 
+   --breakpoint-xl: 1100px; 
 }
 
 /* ENLACES */
@@ -50,18 +54,3 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.2;
 }
-
-/* UTILIDADES (opcional: puedes borrarlas si usas frameworks como Tailwind o Bootstrap) */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--padding-md);
-}
-
-/* EJEMPLOS DE MEDIA QUERIES (puedes copiarlos como plantilla) */
-
-/* @media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-} */
