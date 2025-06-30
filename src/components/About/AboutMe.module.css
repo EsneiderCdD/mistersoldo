@@ -19,12 +19,12 @@
 }
 
 .logo {
-  width: 200px;
+  width: 150px;
   height: auto;
   margin: 1rem auto;
 }
 
-/* Botón con poster */
+
 .videoThumbnail {
   display: inline-block;
   cursor: pointer;
@@ -39,21 +39,30 @@
   transform: scale(1.05);
 }
 
-.posterImage {
-  width: 100%;
-  max-width: 200px;
-  display: block;
-  border-radius: 12px 12px 0 0;
+
+
+.youtubePlayButton {
+  width: 60px;
+  height: 40px;
+  background-color: #ff0000; /* Rojo YouTube */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.playText {
-  display: block;
-  padding: 1rem;
-  background-color: #444;
-  color: white;
-  font-weight: bold;
-  border-radius: 0 0 12px 12px;
-  transition: background-color 0.3s ease;
+.youtubePlayButton:hover {
+  background-color: #cc0000; /* Oscurece al hacer hover */
+}
+
+.playTriangle {
+  width: 0;
+  height: 0;
+  border-left: 12px solid white;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
 }
 
 .videoThumbnail:hover .playText {
@@ -118,9 +127,7 @@
     width: 180px;
   }
 
-  .posterImage {
-    max-width: 180px;
-  }
+
 
   .video {
     width: 700px;
@@ -142,9 +149,7 @@
     width: 150px;
   }
 
-  .posterImage {
-    max-width: 150px;
-  }
+
 
   .video {
     width: 600px;
@@ -164,10 +169,6 @@
 
   .logo {
     width: 120px;
-  }
-
-  .posterImage {
-    max-width: 120px;
   }
 
   .video {
@@ -190,9 +191,7 @@
     width: 100px;
   }
 
-  .posterImage {
-    max-width: 100px;
-  }
+
 
   .video {
     width: 90vw;

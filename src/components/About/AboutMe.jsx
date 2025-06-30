@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import styles from './AboutMe.module.css'
 import sobreMr from '../../assets/videos/sobreMr.mp4'
-import posterImg from '../../assets/images/MrsoldoP.png'
+
 import { X } from 'lucide-react' // Si quieres, te puedo cambiar esto por texto
 import Logo from '../../assets/images/Logo.jpeg'
 
@@ -74,8 +74,9 @@ const AboutMe = () => {
 
       {/* Botón con imagen como poster */}
       <div className={styles.videoThumbnail} onClick={openModal}>
-        <img src={posterImg} alt="Poster Mister Soldo" className={styles.posterImage} />
-        <span className={styles.playText}>Ver Video Sobre Mi 🎥</span>
+        <div className={styles.youtubePlayButton}>
+          <div className={styles.playTriangle}></div>
+        </div>
       </div>
 
       {/* Modal */}
