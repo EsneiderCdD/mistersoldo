@@ -7,7 +7,7 @@ import SongModal from './SongModal';
 import Album from '../../assets/images/Album.jpg';
 import IP from '../../assets/images/IP.jpeg';
 import { albumSongs, soloSongs } from '../../data/albumSongs';
-
+import Logo from '../../assets/images/Logo.jpeg';
 const InteractiveDiscography = () => {
   const [activeCategory, setActiveCategory] = useState(null);
   const [selectedVideo, setSelectedVideo] = useState(null);
@@ -56,6 +56,8 @@ const InteractiveDiscography = () => {
 
   return (
     <section className={styles.section}>
+      <img src={Logo} alt="Logo Mister Soldo" className={styles.logo} />
+
       <h2 className={styles.title}>Explora la Discografía</h2>
 
      

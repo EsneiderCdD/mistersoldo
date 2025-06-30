@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import Logo from "../../assets/images/Logo.jpeg";
 
 import styles from "./VideoCarousel.module.css";
 import { videos } from "../../data/videos";
@@ -11,7 +12,9 @@ import { videos } from "../../data/videos";
 const VideoCarousel = () => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Momentos Destacados</h2>
+      <img src={Logo} alt="Logo Mister Soldo" className={styles.logo} />
+
+      <h2 className={styles.title}>MOMENTOS <br /> DESTACADOS</h2>
       <Swiper
         spaceBetween={20}
         slidesPerView={3}

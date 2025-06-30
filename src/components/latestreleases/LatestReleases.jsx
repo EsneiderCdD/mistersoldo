@@ -1,6 +1,7 @@
 // LatestReleases.jsx
 import React from 'react';
 import styles from './LatestReleases.module.css';
+import Logo from '../../assets/images/Logo.jpeg';
 
 const releases = [
   {
@@ -14,7 +15,9 @@ const releases = [
 const LatestReleases = () => {
   return (
     <section className={styles.latestSection}>
-      <h2 className={styles.title}> Últimos Lanzamientos</h2>
+      <img src={Logo} alt="Logo Mister Soldo" className={styles.logo} />
+
+      <h2 className={styles.title}> ÚLTIMO <br /> LANZAMIENTO</h2>
       <div className={styles.releaseList}>
         {releases.map((release, idx) => (
           <div key={idx} className={styles.releaseCard}>
