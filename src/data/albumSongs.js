@@ -1,6 +1,6 @@
 // src/data/albumSongs.js
 import a from '../assets/images/a.jpeg'; // Ajusta la ruta si es necesario
-import Album from  '../assets/images/album.jpg'; // Ajusta la ruta si es necesario
+import Album from  '../assets/images/Album.jpg'; // Ajusta la ruta si es necesario
 export const albumSongs = [
   { title: 'Profesión Peligro', artist: 'MISTER SOLDO - TCLASS / AZOTE RECORDS - JAVA BLUNT - BIG CHAN', videoId: 'ZyjDsRU1jKc', image: Album },
   { title: 'Monedas de Oro', artist: 'Mister Soldo', videoId: '1yvu4XyLwWo', image: Album },
