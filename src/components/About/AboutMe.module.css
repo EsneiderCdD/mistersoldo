@@ -81,6 +81,9 @@
   border-radius: 12px;
   max-width: 90%;
   max-height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .closeButton {
@@ -96,7 +99,8 @@
 .video {
   width: 800px;
   max-width: 90vw;
-  height: auto;
+  max-height: 90vh;
+  object-fit: contain;
   border-radius: 12px;
 }
 
@@ -120,6 +124,8 @@
 
   .video {
     width: 700px;
+    max-width: 90vw;
+    max-height: 90vh;
   }
 }
 
@@ -142,6 +148,8 @@
 
   .video {
     width: 600px;
+    max-width: 90vw;
+    max-height: 90vh;
   }
 }
 
@@ -164,6 +172,8 @@
 
   .video {
     width: 90vw;
+    max-width: 90vw;
+    max-height: 90vh;
   }
 }
 
@@ -186,5 +196,7 @@
 
   .video {
     width: 90vw;
+    max-width: 90vw;
+    max-height: 90vh;
   }
 }
