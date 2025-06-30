@@ -75,7 +75,7 @@
 }
 
 /* NUEVOS - agrega abajo */
-
+/* Drop Zone base */
 .dropZone {
   margin: 2rem auto;
   padding: 2rem;
@@ -83,6 +83,7 @@
   border-radius: 1rem;
   background: #111;
   max-width: 600px;
+  min-height: 300px; /* 📌 Forzamos un tamaño mínimo */
   text-align: center;
   transition: background 0.3s ease;
 }
@@ -103,6 +104,7 @@
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
+
 .droppedImage {
   width: 200px;
   aspect-ratio: 1 / 1;
@@ -110,3 +112,100 @@
   object-fit: cover;
 }
 
+/* Álbumes base */
+.albumCard {
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  width: 200px; /* 📌 Reducimos tamaño base */
+}
+
+.albumImage {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+/* 📱 RESPONSIVE */
+
+/* Tablets medianas */
+@media (max-width: 1024px) {
+  .albumCard {
+    width: 180px;
+  }
+
+  .dropZone {
+    max-width: 500px;
+    min-height: 280px;
+  }
+
+  .droppedImage {
+    width: 180px;
+  }
+}
+
+/* Tablets pequeñas */
+@media (max-width: 768px) {
+  .albumCard {
+    width: 150px;
+  }
+
+  .dropZone {
+    max-width: 450px;
+    min-height: 250px;
+  }
+
+  .droppedImage {
+    width: 150px;
+  }
+}
+
+/* Móviles grandes */
+@media (max-width: 600px) {
+  .albumCard {
+    width: 120px;
+  }
+
+  .dropZone {
+    max-width: 400px;
+    min-height: 220px;
+  }
+
+  .droppedImage {
+    width: 120px;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 450px) {
+  .albumCard {
+    width: 100px;
+  }
+
+  .dropZone {
+    max-width: 350px;
+    min-height: 200px;
+  }
+
+  .droppedImage {
+    width: 100px;
+  }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 350px) {
+  .albumCard {
+    width: 80px;
+  }
+
+  .dropZone {
+    max-width: 300px;
+    min-height: 180px;
+  }
+
+  .droppedImage {
+    width: 80px;
+  }
+}
