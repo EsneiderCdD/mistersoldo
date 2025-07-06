@@ -15,7 +15,7 @@
 font-family: var(--font-title);
   font-size: 5rem;
   letter-spacing: 5px;
-  line-height: 1.5;
+  line-height: 1.25;
   
   color: white;
 }
@@ -47,7 +47,7 @@ font-family: var(--font-title);
   width: 100%;
   aspect-ratio: 1 / 1; /* Esto obliga a que el ancho y el alto sean siempre iguales */
  /* Ahora sí quedará perfectamente circular */
-  margin-bottom: 1rem;
+ 
   object-fit: cover;
 }
 
@@ -94,7 +94,7 @@ font-family: var(--font-title);
   border-radius: 1rem;
   background: #111;
   max-width: 600px;
-  min-height: 300px; /* 📌 Forzamos un tamaño mínimo */
+ 
   text-align: center;
   transition: background 0.3s ease;
 }
@@ -135,7 +135,7 @@ font-family: var(--font-title);
   width: 100%;
   aspect-ratio: 1 / 1;
   
-  margin-bottom: 1rem;
+  
   object-fit: cover;
 }
 
@@ -145,7 +145,7 @@ font-family: var(--font-title);
 @media (max-width: 1100px) {
     .title {
     font-size:4rem;
-    line-height: 1.5; 
+    line-height: 1.25; 
   }
   
   .albumCard {
@@ -154,7 +154,7 @@ font-family: var(--font-title);
 
   .dropZone {
     max-width: 500px;
-    min-height: 280px;
+   
   }
 
   .droppedImage {
@@ -166,7 +166,7 @@ font-family: var(--font-title);
 @media (max-width: 700px) {
   .title {
     font-size: 3rem;
-    line-height: 1.75; 
+    line-height: 1.25; 
   }
   .logo {
     width: 125px;
@@ -177,7 +177,7 @@ font-family: var(--font-title);
 
   .dropZone {
     max-width: 450px;
-    min-height: 250px;
+   
   }
 
   .droppedImage {
@@ -193,7 +193,7 @@ font-family: var(--font-title);
 
   .dropZone {
     max-width: 400px;
-    min-height: 220px;
+  
   }
 
   .droppedImage {
@@ -205,7 +205,7 @@ font-family: var(--font-title);
 @media (max-width: 450px) {
   .title {
     font-size: 2rem;
-    line-height: 1.65; 
+    line-height: 1.25; 
   }
   .logo {
     width: 100px;
@@ -216,7 +216,7 @@ font-family: var(--font-title);
 
   .dropZone {
     max-width: 350px;
-    min-height: 200px;
+  
   }
 
   .droppedImage {
@@ -240,7 +240,7 @@ font-family: var(--font-title);
 
   .dropZone {
     max-width: 300px;
-    min-height: 180px;
+    
   }
 
   .droppedImage {

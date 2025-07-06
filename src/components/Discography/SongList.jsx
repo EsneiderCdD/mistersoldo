@@ -10,7 +10,7 @@ const SongList = ({ songs, setSelectedVideo }) => (
           <div className={styles.songText}>
             <span className={styles.songTitle}>{song.title}</span>
             <span className={styles.songArtist}>{song.artist}</span>
-            <button onClick={() => setSelectedVideo(song.videoId)}>🎵 Reproducir</button>
+            <button onClick={() => setSelectedVideo(song.videoId)}>🎵 Escuchar</button>
           </div>
         </div>
       </div>
