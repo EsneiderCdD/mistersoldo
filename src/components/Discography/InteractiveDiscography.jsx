@@ -79,7 +79,7 @@ const InteractiveDiscography = () => {
           ) : (
             <>
               <span className={styles.dropIcon}>🎧</span>
-              <p>Arrastra aquí el álbum o canciones que quieras escuchar</p>
+              <p>Arrastra aquí el álbum para visualizar sus canciones </p>
             </>
           )}
         </div>

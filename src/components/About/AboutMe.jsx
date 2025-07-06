@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import styles from './AboutMe.module.css'
-import sobreMr from '../../assets/videos/sobreMr.mp4'
 
-import { X } from 'lucide-react' // Si quieres, te puedo cambiar esto por texto
+import { X } from 'lucide-react'
 import Logo from '../../assets/images/Logo.jpeg'
 
 const textVariants = {
@@ -31,10 +30,11 @@ const AboutMe = () => {
         custom={0}
         variants={textVariants}
       >
-        
-        
+        {/* Puedes agregar título aquí si quieres */}
       </motion.h2>
-      {<img src={Logo} alt="Logo Mister Soldo" className={styles.logo} />}
+
+      <img src={Logo} alt="Logo Mister Soldo" className={styles.logo} />
+
       <motion.p
         className={styles.text}
         initial="hidden"
@@ -47,6 +47,7 @@ const AboutMe = () => {
         que desde las calles de Envigado ha buscado fusionar ritmos urbanos con
         mensajes profundos sobre justicia social, identidad local y esperanza.
       </motion.p>
+
       <motion.p
         className={styles.text}
         initial="hidden"
@@ -60,6 +61,7 @@ const AboutMe = () => {
         cada canción, Mister Soldo busca conectar con la comunidad y ser voz de
         quienes no siempre la tienen.
       </motion.p>
+
       <motion.p
         className={styles.text}
         initial="hidden"
@@ -86,7 +88,18 @@ const AboutMe = () => {
             <button className={styles.closeButton} onClick={closeModal}>
               <X size={30} />
             </button>
-            <video src={sobreMr} controls autoPlay className={styles.video} />
+            {/* YouTube Embed */}
+            <div className={styles.videoContainer}>
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/yCDksIhKxlk?si=8xNFlkuUmubUfKAy&autoplay=1"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
       )}
