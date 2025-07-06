@@ -1,5 +1,3 @@
-// src/components/ParallaxSection/ParallaxSection.jsx
-
 import React from "react";
 import styles from "./ParallaxSection.module.css";
 import { socialLinks } from "../../data/socialLinks";
@@ -18,7 +16,7 @@ const ParallaxSection = () => {
               rel="noopener noreferrer"
               className={styles.button}
             >
-              {link.name}
+              <img src={link.icon} alt={link.name} className={styles.icon} />
             </a>
           ))}
         </div>
@@ -28,4 +26,3 @@ const ParallaxSection = () => {
 };
 
 export default ParallaxSection;
-

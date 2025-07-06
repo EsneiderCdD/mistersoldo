@@ -1,14 +1,15 @@
 .parallaxSection {
-  background-image: url('../../assets/images/IP.jpeg');
+  background-image: url('../../assets/images/k.jpeg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain; /* Imagen más alejada */
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: #000; /* Fondo de respaldo */
 }
 
 .overlay {
@@ -32,21 +33,32 @@
 }
 
 .button {
-  padding: 0.75rem 1.5rem;
+  width: 60px; /* Tamaño del botón */
+  height: 60px;
   border: none;
-  border-radius: 8px;
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
+  border-radius: 50%; /* Botón redondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  
+  padding: 0; /* Elimina relleno extra */
 }
-
-.button:nth-child(1) { background-color: #25d366; } /* WhatsApp */
-.button:nth-child(2) { background-color: #e1306c; } /* Instagram */
-.button:nth-child(3) { background-color: #ff0000; } /* YouTube */
-.button:nth-child(4) { background-color: #1db954; } /* Spotify */
 
 .button:hover {
-  opacity: 0.8;
+  transform: scale(1.1); /* Efecto zoom al pasar el mouse */
+ 
 }
+
+.icon {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+/* Aumentar solo el primer icono */
+.button:nth-child(1) .icon {
+  width: 150%;
+  height: 150%;
+}
+
