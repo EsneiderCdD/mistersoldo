@@ -16,7 +16,7 @@
   font-family: var(--font-title);
   font-size: 5rem;
   letter-spacing: 5px;
-  line-height: 1.5;
+  line-height: 1.25;
   
   color: #ffffffe3;
   
@@ -59,7 +59,7 @@
 @media (max-width: 1100px) {
       .title {
     font-size:4rem;
-    line-height: 1.5; 
+    line-height: 1.25; 
   }
   .video {
     width: 90%;
@@ -70,7 +70,7 @@
 @media (max-width: 700px) {
   .title {
     font-size: 3rem;
-    line-height: 1.75; 
+    line-height: 1.25; 
   }
   .logo {
     width: 125px;
@@ -84,7 +84,7 @@
 @media (max-width: 450px) {
    .title {
     font-size: 2rem;
-    line-height: 1.65; 
+    line-height: 1.25; 
   }
   .logo {
     width: 100px;
